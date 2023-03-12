@@ -2,10 +2,10 @@
     <string name="app_name">DASS_UTFPRxUNOESTE</string>
 
     <string-array name="section_answers">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
+        <item>Não se aplicou de maneira alguma</item>
+        <item>Aplicou-se em algum grau, ou por pouco de tempo</item>
+        <item>Aplicou-se em um grau considerável</item>
+        <item>Aplicou-se muito, ou na maioria do tempo</item>
     </string-array>
 </resources>
 

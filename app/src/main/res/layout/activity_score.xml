@@ -4,8 +4,8 @@
     android:background="#E4DFDF"
     android:layout_height="match_parent">
 
+
     <TextView
-        android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -14,24 +14,47 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:text="Resultado:"
-        android:textSize="24sp" />
-
+        android:textSize="48sp" />
 
     <TextView
-        android:id="@+id/labelDevs"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="181dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="529dp"
-        android:text="....."
-        android:textSize="15sp" />
 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/null"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="118dp"
+        android:text="Depressão:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/null"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="191dp"
+        android:text="Ansiedade:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/restartBtn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="41dp"
+        android:text="ESTRESSE:"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/restartBtn"

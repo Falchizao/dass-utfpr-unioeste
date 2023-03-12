@@ -7,79 +7,63 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Por favor, leia cuidadosamente cada uma das afirmações abaixo e selecione os número de acordo com seus sintomas."
         android:textColor="@color/black"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:inputType="textMultiLine"
-        android:text="0 - Não se aplicou de maneira alguma\n1 - Aplicou-se em algum grau, ou por pouco de tempo\n2 - Aplicou-se em um grau considerável, ou por uma boa parte do tempo\n3 - Aplicou-se muito, ou na maioria do tempo"
-        android:textColor="@color/black"
-        android:textSize="18dp" />
-
-    <TextView
-        android:textColor="@color/black"
-        android:gravity="left"
-        android:textSize="18dp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:id="@+id/question1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Senti-me agitado" />
 
     <Spinner
-        android:gravity="left"
         android:id="@+id/answer1"
-        android:layout_marginBottom="11dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="30dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:textColor="@color/black"
-        android:gravity="left"
-        android:textSize="18dp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:id="@+id/question2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Achei difícil relaxar" />
 
     <Spinner
-        android:gravity="left"
         android:id="@+id/answer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="30dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:textColor="@color/black"
-        android:gravity="left"
-        android:textSize="18dp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:id="@+id/question3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Senti-me depressivo (a) e sem ânimo" />
 
     <Spinner
-        android:gravity="left"
         android:id="@+id/answer3"
         android:layout_width="match_parent"
-        android:layout_marginBottom="11dp"
         android:layout_height="wrap_content"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="30dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:textColor="@color/black"
-        android:gravity="left"
-        android:textSize="18dp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:id="@+id/question4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -87,30 +71,31 @@
 estava fazendo" />
 
     <Spinner
-        android:gravity="left"
         android:id="@+id/answer4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="30dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:textColor="@color/black"
-        android:gravity="left"
-        android:textSize="18dp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:id="@+id/question5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Senti que ia entrar em pânico" />
 
     <Spinner
-        android:gravity="left"
         android:id="@+id/answer5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
-
+        android:layout_marginBottom="30dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/next_button_thirdPage"
@@ -119,9 +104,11 @@ estava fazendo" />
         android:layout_gravity="bottom"
         android:layout_marginStart="150dp"
         android:layout_marginTop="16dp"
-
         android:padding="16dp"
         android:text="Próximas perguntas" />
+
+
+
 
 </LinearLayout>
 

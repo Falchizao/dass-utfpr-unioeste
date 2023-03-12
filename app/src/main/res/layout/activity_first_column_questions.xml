@@ -1,145 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E4DFDF"
     android:padding="16dp">
 
-    <ScrollView
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/question1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:text="Achei difícil me acalmar " />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+    <Spinner
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Por favor, leia cuidadosamente cada uma das afirmações abaixo e selecione os número de acordo com seus sintomas."
-                android:textColor="@color/black"
-                android:textSize="20dp" />
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti minha boca seca" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:inputType="textMultiLine"
-                android:text="0 - Não se aplicou de maneira alguma\n1 - Aplicou-se em algum grau, ou por pouco de tempo\n2 - Aplicou-se em um grau considerável, ou por uma boa parte do tempo\n3 - Aplicou-se muito, ou na maioria do tempo"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                app:textAllCaps="false" />
+    <Spinner
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
-            <TextView
-                android:id="@+id/question1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:text="Achei difícil me acalmar "
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Não consegui vivenciar nenhum sentimento positivo " />
 
-            <Spinner
-                android:id="@+id/answer1"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:entries="@array/section_answers"
-                android:gravity="center" />
+    <Spinner
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
-            <TextView
-                android:id="@+id/question2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="left"
-                android:text="Senti minha boca seca"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tive dificuldade em respirar em alguns momentos (ex. respiração
+ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
 
-            <Spinner
-                android:id="@+id/answer2"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:entries="@array/section_answers"
-                android:gravity="center" />
+    <Spinner
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
-            <TextView
-                android:id="@+id/question3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="left"
-                android:text="Não consegui vivenciar nenhum sentimento positivo "
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:id="@+id/question5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Achei difícil ter iniciativa para fazer as coisas" />
 
-            <Spinner
-                android:id="@+id/answer3"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:entries="@array/section_answers"
-                android:gravity="center" />
+    <Spinner
+        android:id="@+id/answer5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
 
-            <TextView
-                android:id="@+id/question4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="left"
-                android:text="Tive dificuldade em respirar em alguns momentos (ex. respiração
-        ofegante, falta de ar, sem ter feito nenhum esforço físico)"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+        android:minHeight="48dp"
+        android:textColor="#FF8B1500"
+        android:textSize="20pt" />
 
-            <Spinner
-                android:id="@+id/answer4"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:entries="@array/section_answers"
-                android:gravity="center" />
-
-            <TextView
-                android:id="@+id/question5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:gravity="left"
-                android:text="Achei difícil ter iniciativa para fazer as coisas"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
-
-            <Spinner
-                android:id="@+id/answer5"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="11dp"
-                android:entries="@array/section_answers"
-                android:gravity="center"
-
-                android:textColor="#FF8B1500"
-                android:textSize="20pt" />
-
-            <Button
-                android:id="@+id/next_button_firstPage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:padding="16dp"
-                android:text="Próximas perguntas" />
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/next_button_firstPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Próximas perguntas" />
 
 </LinearLayout>

@@ -16,12 +16,13 @@
         android:text="Não consegui me entusiasmar com nada" />
 
     <Spinner
-        android:gravity="center"
         android:id="@+id/answer1"
-        android:layout_marginBottom="11dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/question2"
@@ -33,12 +34,13 @@
         android:text="Senti que não tinha valor como pessoa" />
 
     <Spinner
-        android:gravity="center"
         android:id="@+id/answer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/question3"
@@ -50,12 +52,13 @@
         android:text="Senti que estava um pouco emotivo/sensível demais" />
 
     <Spinner
-        android:gravity="center"
         android:id="@+id/answer3"
         android:layout_width="match_parent"
-        android:layout_marginBottom="11dp"
         android:layout_height="wrap_content"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/question4"
@@ -68,12 +71,13 @@
 esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
 
     <Spinner
-        android:gravity="center"
         android:id="@+id/answer4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/question5"
@@ -85,12 +89,13 @@ esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
         android:text="Senti medo sem motivo" />
 
     <Spinner
-        android:gravity="center"
         android:id="@+id/answer5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
 
     <TextView
@@ -103,31 +108,22 @@ esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
         android:text="Senti que a vida não tinha sentido " />
 
     <Spinner
-        android:gravity="center"
         android:id="@+id/answer6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:entries="@array/section_answers" />
+        android:layout_marginBottom="5dp"
+        android:entries="@array/section_answers"
+        android:gravity="center"
+        android:minHeight="48dp" />
 
-    <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="382dp"
-        android:layout_height="206dp"
+    <Button
+        android:id="@+id/calcular_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginTop="15dp">
-
-        <Button
-            android:id="@+id/calcular_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="16dp"
-            android:padding="16dp"
-            android:text="Calcular Resultado" />
-
-    </TableRow>
+        android:layout_marginStart="150dp"
+        android:padding="16dp"
+        android:text="Calcular Resultado" />
 
 
 </LinearLayout>
