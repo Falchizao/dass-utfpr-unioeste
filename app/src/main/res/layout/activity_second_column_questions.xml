@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#E4DFDF"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Por favor, leia cuidadosamente cada uma das afirmações abaixo e selecione os número de acordo com seus sintomas."
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:text="0 - Não se aplicou de maneira alguma\n1 - Aplicou-se em algum grau, ou por pouco de tempo\n2 - Aplicou-se em um grau considerável, ou por uma boa parte do tempo\n3 - Aplicou-se muito, ou na maioria do tempo"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/question1"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:text="Tive a tendência de reagir de forma exagerada às situações" />
+
+    <Spinner
+        android:id="@+id/answer1"
+        android:gravity="left"
+        android:layout_marginBottom="11dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti tremores (ex. nas mãos) " />
+
+    <Spinner
+        android:id="@+id/answer2"
+        android:gravity="left"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/question3"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti que estava sempre nervoso" />
+
+    <Spinner
+        android:id="@+id/answer3"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_marginBottom="11dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question4"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preocupei-me com situações em que eu pudesse entrar em pânico e
+parecesse ridículo (a)" />
+
+    <Spinner
+        android:id="@+id/answer4"
+        android:gravity="left"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question5"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti que não tinha nada a desejar" />
+
+    <Spinner
+        android:id="@+id/answer5"
+        android:gravity="left"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+
+    <Button
+        android:id="@+id/next_button_secondPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="Próximas perguntas" />
+
+</LinearLayout>

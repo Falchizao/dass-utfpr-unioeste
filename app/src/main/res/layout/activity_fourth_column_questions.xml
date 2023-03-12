@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4DFDF"
+    android:padding="16dp">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/question1"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Não consegui me entusiasmar com nada" />
+
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/answer1"
+        android:layout_marginBottom="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti que não tinha valor como pessoa" />
+
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question3"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti que estava um pouco emotivo/sensível demais" />
+
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="11dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question4"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sabia que meu coração estava alterado mesmo não tendo feito nenhum
+esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
+
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+    <TextView
+        android:id="@+id/question5"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti medo sem motivo" />
+
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/answer5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+
+    <TextView
+        android:id="@+id/question6"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senti que a vida não tinha sentido " />
+
+    <Spinner
+        android:gravity="center"
+        android:id="@+id/answer6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/section_answers" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="382dp"
+        android:layout_height="206dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/calcular_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="Calcular Resultado" />
+
+    </TableRow>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E4DFDF"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Resultado:"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/labelDevs"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="529dp"
+        android:text="....."
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="317dp"
+        android:layout_height="76dp"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:text="Realizar outra avaliação" />
+
+</RelativeLayout>
