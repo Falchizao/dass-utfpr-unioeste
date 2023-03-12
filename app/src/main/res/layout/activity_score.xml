@@ -6,6 +6,8 @@
 
 
     <TextView
+        android:id="@+id/lblResult"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -16,51 +18,98 @@
         android:text="Resultado:"
         android:textSize="48sp" />
 
-    <TextView
 
+    <TextView
+        android:id="@+id/lblDepressao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/null"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="121dp"
+        android:layout_marginTop="252dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="118dp"
         android:text="Depressão:"
         android:textSize="24sp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/null"
+        android:id="@+id/resultDepressao"
+        android:gravity="center"
+        android:layout_width="205dp"
+        android:layout_height="52dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="182dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="41dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblAnsiedade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="377dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="191dp"
         android:text="Ansiedade:"
         android:textSize="24sp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/restartBtn"
+        android:id="@+id/resultAnsiedade"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="255dp"
+        android:layout_marginTop="425dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="41dp"
-        android:text="ESTRESSE:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblEstresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="42dp"
+        android:text="Estresse:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/resultStress"
+        android:gravity="center"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="72dp"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/restartBtn"
         android:layout_width="317dp"
         android:layout_height="76dp"
-        android:layout_centerInParent="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="38dp"
         android:padding="16dp"
         android:text="Realizar outra avaliação" />
 
