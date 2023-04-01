@@ -95,7 +95,7 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleFirstSectionScore(Integer result){
         result *= 2;
-        if(result <= 9 ) {
+        if(result > 0 && result <= 9 ) {
             lblDepression.setText(SeveridadeEnum.LEVE.getContent());
             lblDepression.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 10 && result <= 13) {
@@ -115,7 +115,7 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleSecondSectionScore(Integer result){
         result *= 2;
-        if(result <= 7 ) {
+        if(result > 0 && result <= 7 ) {
             lblAnxiety.setText(SeveridadeEnum.LEVE.getContent());
             lblAnxiety.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 8 && result <= 9) {
@@ -135,7 +135,7 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleThirdSectionScore(Integer result){
         result *= 2;
-        if(result <= 14 ) {
+        if(result > 0 && result <= 14 ) {
             lblStress.setText(SeveridadeEnum.LEVE.getContent());
             lblStress.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 15 && result <= 18) {
@@ -155,7 +155,7 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleFourthSectionScore(Integer result){
         result *= 2;
-        if(result <= 9 ) {
+        if(result > 0 && result <= 9 ) {
             lblStress.setText(SeveridadeEnum.LEVE.getContent());
             lblStress.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 10 && result <= 13) {

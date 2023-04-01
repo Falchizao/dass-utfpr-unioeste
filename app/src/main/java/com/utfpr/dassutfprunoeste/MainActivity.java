@@ -13,17 +13,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.activity_main);
+        handleToast("Carregando, por favor aguarde");
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 // This method will be executed once the timer is over
                 Intent i = new Intent(getApplicationContext(), InitializeActivity.class);
-                handleToast("Carregando, por favor aguarde");
                 startActivity(i);
                 finish();
             }
-        }, 1000);
+        }, 5000);
     }
 
     private void handleToast(String message)

@@ -7,7 +7,7 @@
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_first_column_questions.xml" value="0.264" />
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_fourth_column_questions.xml" value="0.264" />
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_initialize.xml" value="0.264" />
-        <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_score.xml" value="0.2" />
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_second_column_questions.xml" value="0.264" />
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/layout/activity_third_column_questions.xml" value="0.264" />
@@ -15,6 +15,9 @@
         <entry key="..\:/Users/thund/OneDrive/Desktop/DASSUTFPRUNOESTE/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
