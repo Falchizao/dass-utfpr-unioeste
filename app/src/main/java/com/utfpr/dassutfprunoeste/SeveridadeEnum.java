@@ -1,8 +1,7 @@
 package com.utfpr.dassutfprunoeste;
 
 public enum SeveridadeEnum {
-    ZERO("Nenhum problema"),
-    LEVE("Leve"),
+    LEVE("Normal"),
     MINIMO("Minimo"),
     MODERADO("Moderado"),
     GRAVE("Grave"),

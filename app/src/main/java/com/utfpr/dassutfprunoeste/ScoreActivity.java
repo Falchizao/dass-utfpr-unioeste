@@ -20,7 +20,6 @@ public class ScoreActivity extends AppCompatActivity {
     Integer counter_firstSection = 0;
     Integer counter_secondSection = 0;
     Integer counter_thirdSection = 0;
-    Integer counter_fourthSection = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,58 +51,51 @@ public class ScoreActivity extends AppCompatActivity {
     }
 
     private void startCalc() {
-        calcFirstSection();
-        calcSecondSection();
-        calcThirdSection();
-        calcFourthSection();
+        calcDepressao();
+        calcAnsiedade();
+        calcEstresse();
+
     }
 
-    private void calcFirstSection() {
-        counter_firstSection += Integer.parseInt(bundle.getString("1_answer"));
-        counter_firstSection += Integer.parseInt(bundle.getString("2_answer"));
+    private void calcDepressao() {
+        counter_firstSection += Integer.parseInt(bundle.getString("16_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("17_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("10_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("13_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("21_answer"));
         counter_firstSection += Integer.parseInt(bundle.getString("3_answer"));
-        counter_firstSection += Integer.parseInt(bundle.getString("4_answer"));
         counter_firstSection += Integer.parseInt(bundle.getString("5_answer"));
-        handleFirstSectionScore(counter_firstSection);
+        handleDepression(counter_firstSection);
     }
 
-    private void calcSecondSection(){
-        counter_secondSection += Integer.parseInt(bundle.getString("6_answer"));
-        counter_secondSection +=  Integer.parseInt(bundle.getString("7_answer"));
+    private void calcEstresse(){
+        counter_secondSection += Integer.parseInt(bundle.getString("18_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("6_answer"));
         counter_secondSection +=  Integer.parseInt(bundle.getString("8_answer"));
-        counter_secondSection +=  Integer.parseInt(bundle.getString("9_answer"));
-        counter_secondSection +=  Integer.parseInt(bundle.getString("10_answer"));
-        handleSecondSectionScore(counter_secondSection);
+        counter_secondSection +=  Integer.parseInt(bundle.getString("12_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("11_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("1_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("14_answer"));
+        handleEstresse(counter_secondSection);
     }
 
-    private void calcThirdSection() {
-        counter_thirdSection +=  Integer.parseInt(bundle.getString("11_answer"));
-        counter_thirdSection += Integer.parseInt(bundle.getString("12_answer"));
-        counter_thirdSection += Integer.parseInt(bundle.getString("13_answer"));
-        counter_thirdSection += Integer.parseInt(bundle.getString("14_answer"));
+    private void calcAnsiedade() {
+        counter_thirdSection +=  Integer.parseInt(bundle.getString("20_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("9_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("19_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("2_answer"));
         counter_thirdSection += Integer.parseInt(bundle.getString("15_answer"));
-        handleThirdSectionScore(counter_thirdSection);
+        counter_thirdSection += Integer.parseInt(bundle.getString("7_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("4_answer"));
+        handleAnsiedade(counter_thirdSection);
     }
 
-    private void calcFourthSection() {
-        counter_fourthSection += Integer.parseInt(bundle.getString("16_answer"));
-        counter_fourthSection += Integer.parseInt(bundle.getString("17_answer"));
-        counter_fourthSection += Integer.parseInt(bundle.getString("18_answer"));
-        counter_fourthSection += Integer.parseInt(bundle.getString("19_answer"));
-        counter_fourthSection += Integer.parseInt(bundle.getString("20_answer"));
-        counter_fourthSection += Integer.parseInt(bundle.getString("21_answer"));
-        handleFourthSectionScore(counter_fourthSection);
-    }
 
-    private void handleFirstSectionScore(Integer result){
+    private void handleDepression(Integer result){
         result *= 2;
-        if(result == 0){
-            lblDepression.setText(SeveridadeEnum.ZERO.getContent());
-            lblDepression.setTextColor(Color.parseColor("#FFFFFF"));
-        }
-        else if(result > 0 && result <= 9 ) {
+        if(result <= 9 ) {
             lblDepression.setText(SeveridadeEnum.LEVE.getContent());
-            lblDepression.setTextColor(Color.parseColor("#87CEFA"));
+            lblDepression.setTextColor(Color.parseColor("#FFFFFF"));
         } else if (result >= 10 && result <= 13) {
             lblDepression.setText(SeveridadeEnum.MINIMO.getContent());
             lblDepression.setTextColor(Color.parseColor("#FFFF99"));
@@ -119,14 +111,11 @@ public class ScoreActivity extends AppCompatActivity {
         }
     }
 
-    private void handleSecondSectionScore(Integer result){
+    private void handleAnsiedade(Integer result){
         result *= 2;
-        if(result == 0){
-            lblAnxiety.setText(SeveridadeEnum.ZERO.getContent());
-            lblAnxiety.setTextColor(Color.parseColor("#FFFFFF"));
-        } else if(result > 0 && result <= 7 ) {
+        if(result <= 7 ) {
             lblAnxiety.setText(SeveridadeEnum.LEVE.getContent());
-            lblAnxiety.setTextColor(Color.parseColor("#87CEFA"));
+            lblAnxiety.setTextColor(Color.parseColor("#FFFFFF"));
         } else if (result >= 8 && result <= 9) {
             lblAnxiety.setText(SeveridadeEnum.MINIMO.getContent());
             lblAnxiety.setTextColor(Color.parseColor("#FFFF99"));
@@ -136,20 +125,17 @@ public class ScoreActivity extends AppCompatActivity {
         }else if (result >= 15 && result <= 19) {
             lblAnxiety.setText(SeveridadeEnum.GRAVE.getContent());
             lblAnxiety.setTextColor(Color.parseColor("#FFA07A"));
-        }else if (result > 20) {
+        }else if (result > 19) {
             lblAnxiety.setText(SeveridadeEnum.MUITOGRAVE.getContent());
             lblAnxiety.setTextColor(Color.parseColor("#B22222"));
         }
     }
 
-    private void handleThirdSectionScore(Integer result){
+    private void handleEstresse(Integer result){
         result *= 2;
-        if(result == 0){
-            lblStress.setText(SeveridadeEnum.ZERO.getContent());
-            lblStress.setTextColor(Color.parseColor("#FFFFFF"));
-        } else if(result > 0 && result <= 14 ) {
+        if(result <= 14 ) {
             lblStress.setText(SeveridadeEnum.LEVE.getContent());
-            lblStress.setTextColor(Color.parseColor("#87CEFA"));
+            lblStress.setTextColor(Color.parseColor("#FFFFFF"));
         } else if (result >= 15 && result <= 18) {
             lblStress.setText(SeveridadeEnum.MINIMO.getContent());
             lblStress.setTextColor(Color.parseColor("#FFFF99"));
@@ -159,30 +145,7 @@ public class ScoreActivity extends AppCompatActivity {
         }else if (result >= 26 && result <= 33) {
             lblStress.setText(SeveridadeEnum.GRAVE.getContent());
             lblStress.setTextColor(Color.parseColor("#FFA07A"));
-        }else if (result > 34) {
-            lblStress.setText(SeveridadeEnum.MUITOGRAVE.getContent());
-            lblStress.setTextColor(Color.parseColor("#B22222"));
-        }
-    }
-
-    private void handleFourthSectionScore(Integer result){
-        result *= 2;
-        if(result == 0){
-            lblStress.setText(SeveridadeEnum.ZERO.getContent());
-            lblStress.setTextColor(Color.parseColor("#FFFFFF"));
-        } else if(result > 0 && result <= 9 ) {
-            lblStress.setText(SeveridadeEnum.LEVE.getContent());
-            lblStress.setTextColor(Color.parseColor("#87CEFA"));
-        } else if (result >= 10 && result <= 13) {
-            lblStress.setText(SeveridadeEnum.MINIMO.getContent());
-            lblStress.setTextColor(Color.parseColor("#FFFF99"));
-        }else if (result >= 14 && result <= 20) {
-            lblStress.setText(SeveridadeEnum.MODERADO.getContent());
-            lblStress.setTextColor(Color.parseColor("#FFFF00"));
-        }else if (result >= 21 && result <= 27) {
-            lblStress.setText(SeveridadeEnum.GRAVE.getContent());
-            lblStress.setTextColor(Color.parseColor("#FFA07A"));
-        }else if (result > 27) {
+        }else if (result > 33) {
             lblStress.setText(SeveridadeEnum.MUITOGRAVE.getContent());
             lblStress.setTextColor(Color.parseColor("#B22222"));
         }
