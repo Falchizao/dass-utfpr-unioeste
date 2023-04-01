@@ -13,7 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 public class FirstColumnQuestionsActivity extends AppCompatActivity {
-    private static Button nextPage;
+    private static Button calculateButton;
 
     RadioGroup radioGroup1;
     RadioGroup radioGroup2;
@@ -67,7 +67,7 @@ public class FirstColumnQuestionsActivity extends AppCompatActivity {
     }
 
     private void findId(){
-
+        calculateButton = findViewById(R.id.calculateButton);
         radioGroup1 = findViewById(R.id.radioGroup1_1);
         radioGroup2 = findViewById(R.id.radioGroup1_2);
         radioGroup3 = findViewById(R.id.radioGroup1_3);
@@ -136,9 +136,78 @@ public class FirstColumnQuestionsActivity extends AppCompatActivity {
         radioButton20_1.setChecked(true);
         radioButton21_1.setChecked(true);
 
+        calculateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent result = new Intent(getApplicationContext(), ScoreActivity.class);
+
+                RadioButton selectedRadioButton1 = findViewById(radioGroup1.getCheckedRadioButtonId());
+                result.putExtra("1_answer", selectedRadioButton1.getText());
+
+                RadioButton selectedRadioButton2 = findViewById(radioGroup2.getCheckedRadioButtonId());
+                result.putExtra("2_answer", selectedRadioButton2.getText());
+
+                RadioButton selectedRadioButton3 = findViewById(radioGroup3.getCheckedRadioButtonId());
+                result.putExtra("3_answer", selectedRadioButton3.getText());
+
+                RadioButton selectedRadioButton4 = findViewById(radioGroup4.getCheckedRadioButtonId());
+                result.putExtra("4_answer", selectedRadioButton4.getText());
+
+                RadioButton selectedRadioButton5 = findViewById(radioGroup5.getCheckedRadioButtonId());
+                result.putExtra("5_answer", selectedRadioButton5.getText());
+
+                RadioButton selectedRadioButton6 = findViewById(radioGroup6.getCheckedRadioButtonId());
+                result.putExtra("6_answer", selectedRadioButton6.getText());
+
+                RadioButton selectedRadioButton7 = findViewById(radioGroup7.getCheckedRadioButtonId());
+                result.putExtra("7_answer", selectedRadioButton7.getText());
+
+                RadioButton selectedRadioButton8 = findViewById(radioGroup8.getCheckedRadioButtonId());
+                result.putExtra("8_answer", selectedRadioButton8.getText());
+
+                RadioButton selectedRadioButton9 = findViewById(radioGroup9.getCheckedRadioButtonId());
+                result.putExtra("9_answer", selectedRadioButton9.getText());
+
+                RadioButton selectedRadioButton10 = findViewById(radioGroup10.getCheckedRadioButtonId());
+                result.putExtra("10_answer", selectedRadioButton10.getText());
+
+                RadioButton selectedRadioButton11 = findViewById(radioGroup11.getCheckedRadioButtonId());
+                result.putExtra("11_answer", selectedRadioButton11.getText());
+
+                RadioButton selectedRadioButton12 = findViewById(radioGroup12.getCheckedRadioButtonId());
+                result.putExtra("12_answer", selectedRadioButton12.getText());
+
+                RadioButton selectedRadioButton13 = findViewById(radioGroup13.getCheckedRadioButtonId());
+                result.putExtra("13_answer", selectedRadioButton13.getText());
+
+                RadioButton selectedRadioButton14 = findViewById(radioGroup14.getCheckedRadioButtonId());
+                result.putExtra("14_answer", selectedRadioButton14.getText());
+
+                RadioButton selectedRadioButton15 = findViewById(radioGroup15.getCheckedRadioButtonId());
+                result.putExtra("15_answer", selectedRadioButton15.getText());
+
+                RadioButton selectedRadioButton16 = findViewById(radioGroup16.getCheckedRadioButtonId());
+                result.putExtra("16_answer", selectedRadioButton16.getText());
+
+                RadioButton selectedRadioButton17 = findViewById(radioGroup17.getCheckedRadioButtonId());
+                result.putExtra("17_answer", selectedRadioButton17.getText());
+
+                RadioButton selectedRadioButton18 = findViewById(radioGroup18.getCheckedRadioButtonId());
+                result.putExtra("18_answer", selectedRadioButton18.getText());
+
+                RadioButton selectedRadioButton19 = findViewById(radioGroup19.getCheckedRadioButtonId());
+                result.putExtra("19_answer", selectedRadioButton19.getText());
+
+                RadioButton selectedRadioButton20 = findViewById(radioGroup20.getCheckedRadioButtonId());
+                result.putExtra("20_answer", selectedRadioButton20.getText());
+
+                RadioButton selectedRadioButton21 = findViewById(radioGroup1.getCheckedRadioButtonId());
+                result.putExtra("21_answer", selectedRadioButton21.getText());
+                startActivity(result);
+            }
+        });
+
     }
 
-    private void storeData() {
 
-    }
 }

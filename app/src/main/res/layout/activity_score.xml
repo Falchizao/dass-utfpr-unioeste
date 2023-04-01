@@ -26,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="130dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="118dp"
         android:text="Depressão:"
@@ -34,15 +34,15 @@
 
     <TextView
         android:id="@+id/resultDepressao"
-        android:gravity="center"
-        android:layout_width="205dp"
-        android:layout_height="52dp"
+        android:layout_width="255dp"
+        android:layout_height="77dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="41dp"
+        android:gravity="center"
         android:textSize="24sp" />
 
     <TextView
@@ -52,7 +52,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="377dp"
+        android:layout_marginTop="291dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="191dp"
         android:text="Ansiedade:"
@@ -60,15 +60,15 @@
 
     <TextView
         android:id="@+id/resultAnsiedade"
-        android:layout_width="205dp"
-        android:layout_height="44dp"
-        android:gravity="center"
+        android:layout_width="244dp"
+        android:layout_height="89dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="425dp"
+        android:layout_marginTop="343dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="41dp"
+        android:gravity="center"
         android:textSize="24sp" />
 
     <TextView
@@ -78,7 +78,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="450dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="42dp"
         android:text="Estresse:"
@@ -86,15 +86,15 @@
 
     <TextView
         android:id="@+id/resultStress"
-        android:gravity="center"
-        android:layout_width="205dp"
-        android:layout_height="45dp"
+        android:layout_width="238dp"
+        android:layout_height="94dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="544dp"
+        android:layout_marginTop="494dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="72dp"
+        android:gravity="center"
         android:textSize="24sp" />
 
     <Button

@@ -16,6 +16,7 @@ public class ScoreActivity extends AppCompatActivity {
     TextView lblDepression, lblAnxiety, lblStress;
 
     SharedPreferences sh;
+    Bundle bundle;
     Integer counter_firstSection = 0;
     Integer counter_secondSection = 0;
     Integer counter_thirdSection = 0;
@@ -25,10 +26,12 @@ public class ScoreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
+        bundle = getIntent().getExtras();
         handleToast("Calculando resultados... por favor aguarde");
         findId();
         getData();
         startCalc();
+
     }
 
     private void findId(){
@@ -39,7 +42,6 @@ public class ScoreActivity extends AppCompatActivity {
     }
 
     private void getData(){
-        sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
         restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,45 +59,49 @@ public class ScoreActivity extends AppCompatActivity {
     }
 
     private void calcFirstSection() {
-        counter_firstSection += sh.getInt("1_1", 0);
-        counter_firstSection += sh.getInt("1_2", 0);
-        counter_firstSection += sh.getInt("1_3", 0);
-        counter_firstSection += sh.getInt("1_4", 0);
-        counter_firstSection += sh.getInt("1_5", 0);
+        counter_firstSection += Integer.parseInt(bundle.getString("1_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("2_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("3_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("4_answer"));
+        counter_firstSection += Integer.parseInt(bundle.getString("5_answer"));
         handleFirstSectionScore(counter_firstSection);
     }
 
     private void calcSecondSection(){
-        counter_secondSection += sh.getInt("2_1", 0);
-        counter_secondSection +=  sh.getInt("2_2", 0);
-        counter_secondSection +=  sh.getInt("2_3", 0);
-        counter_secondSection +=  sh.getInt("2_4", 0);
-        counter_secondSection +=  sh.getInt("2_5", 0);
+        counter_secondSection += Integer.parseInt(bundle.getString("6_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("7_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("8_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("9_answer"));
+        counter_secondSection +=  Integer.parseInt(bundle.getString("10_answer"));
         handleSecondSectionScore(counter_secondSection);
     }
 
     private void calcThirdSection() {
-        counter_thirdSection +=  sh.getInt("3_1", 0);
-        counter_thirdSection += sh.getInt("3_2", 0);
-        counter_thirdSection += sh.getInt("3_3", 0);
-        counter_thirdSection += sh.getInt("3_4", 0);
-        counter_thirdSection += sh.getInt("3_5", 0);
+        counter_thirdSection +=  Integer.parseInt(bundle.getString("11_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("12_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("13_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("14_answer"));
+        counter_thirdSection += Integer.parseInt(bundle.getString("15_answer"));
         handleThirdSectionScore(counter_thirdSection);
     }
 
     private void calcFourthSection() {
-        counter_fourthSection += sh.getInt("4_1", 0);
-        counter_fourthSection += sh.getInt("4_2", 0);
-        counter_fourthSection += sh.getInt("4_3", 0);
-        counter_fourthSection += sh.getInt("4_4", 0);
-        counter_fourthSection += sh.getInt("4_5", 0);
-        counter_fourthSection += sh.getInt("4_5", 0);
+        counter_fourthSection += Integer.parseInt(bundle.getString("16_answer"));
+        counter_fourthSection += Integer.parseInt(bundle.getString("17_answer"));
+        counter_fourthSection += Integer.parseInt(bundle.getString("18_answer"));
+        counter_fourthSection += Integer.parseInt(bundle.getString("19_answer"));
+        counter_fourthSection += Integer.parseInt(bundle.getString("20_answer"));
+        counter_fourthSection += Integer.parseInt(bundle.getString("21_answer"));
         handleFourthSectionScore(counter_fourthSection);
     }
 
     private void handleFirstSectionScore(Integer result){
         result *= 2;
-        if(result > 0 && result <= 9 ) {
+        if(result == 0){
+            lblDepression.setText(SeveridadeEnum.ZERO.getContent());
+            lblDepression.setTextColor(Color.parseColor("#FFFFFF"));
+        }
+        else if(result > 0 && result <= 9 ) {
             lblDepression.setText(SeveridadeEnum.LEVE.getContent());
             lblDepression.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 10 && result <= 13) {
@@ -115,7 +121,10 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleSecondSectionScore(Integer result){
         result *= 2;
-        if(result > 0 && result <= 7 ) {
+        if(result == 0){
+            lblAnxiety.setText(SeveridadeEnum.ZERO.getContent());
+            lblAnxiety.setTextColor(Color.parseColor("#FFFFFF"));
+        } else if(result > 0 && result <= 7 ) {
             lblAnxiety.setText(SeveridadeEnum.LEVE.getContent());
             lblAnxiety.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 8 && result <= 9) {
@@ -135,7 +144,10 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleThirdSectionScore(Integer result){
         result *= 2;
-        if(result > 0 && result <= 14 ) {
+        if(result == 0){
+            lblStress.setText(SeveridadeEnum.ZERO.getContent());
+            lblStress.setTextColor(Color.parseColor("#FFFFFF"));
+        } else if(result > 0 && result <= 14 ) {
             lblStress.setText(SeveridadeEnum.LEVE.getContent());
             lblStress.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 15 && result <= 18) {
@@ -155,7 +167,10 @@ public class ScoreActivity extends AppCompatActivity {
 
     private void handleFourthSectionScore(Integer result){
         result *= 2;
-        if(result > 0 && result <= 9 ) {
+        if(result == 0){
+            lblStress.setText(SeveridadeEnum.ZERO.getContent());
+            lblStress.setTextColor(Color.parseColor("#FFFFFF"));
+        } else if(result > 0 && result <= 9 ) {
             lblStress.setText(SeveridadeEnum.LEVE.getContent());
             lblStress.setTextColor(Color.parseColor("#87CEFA"));
         } else if (result >= 10 && result <= 13) {

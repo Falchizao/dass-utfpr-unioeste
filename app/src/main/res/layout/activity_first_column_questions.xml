@@ -58,17 +58,18 @@
         android:text="3 - Aplicou-se muito, ou na maioria do tempo" />
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="387dp"
         android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
         android:fillViewport="false">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question1"
@@ -80,8 +81,9 @@
                     android:textStyle="bold" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -122,23 +124,25 @@
                 </LinearLayout>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
                 <TextView
-                    android:textColor="@color/black"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
                     android:id="@+id/question2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti minha boca seca" />
+                    android:layout_marginBottom="5dp"
+                    android:text="Senti minha boca seca"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
 
-
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <RadioGroup
                     android:id="@+id/radioGroup1_2"
@@ -174,26 +178,26 @@
             </TableRow>
 
 
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
                 <TextView
-                    android:textColor="@color/black"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15dp"
                     android:id="@+id/question3"
-
-                    android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Não consegui vivenciar nenhum sentimento positivo " />
+                    android:layout_marginBottom="5dp"
+
+                    android:text="Não consegui vivenciar nenhum sentimento positivo "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
 
-
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <RadioGroup
                     android:id="@+id/radioGroup1_3"
@@ -229,25 +233,27 @@
             </TableRow>
 
 
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
                 <TextView
-                    android:textColor="@color/black"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15dp"
-
-                    android:textStyle="bold"
                     android:id="@+id/question4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="5dp"
                     android:text="Tive dificuldade em respirar em alguns momentos (ex. respiração
-ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
+ofegante, falta de ar, sem ter feito nenhum esforço físico)"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <RadioGroup
                     android:id="@+id/radioGroup1_4"
@@ -293,26 +299,26 @@ ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
             </TableRow>
 
 
-
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:layout_marginBottom="5dp"
-                    android:textSize="15dp"
-
-                    android:textStyle="bold"
                     android:id="@+id/question5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Achei difícil ter iniciativa para fazer as coisas" />
+
+                    android:layout_marginBottom="5dp"
+                    android:text="Achei difícil ter iniciativa para fazer as coisas"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
 
-
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <RadioGroup
                     android:id="@+id/radioGroup1_5"
@@ -348,20 +354,22 @@ ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question6"
-                    android:textColor="@color/black"
                     android:layout_width="match_parent"
-                    android:textSize="15dp"
                     android:layout_height="wrap_content"
-                    android:text="Tive a tendência de reagir de forma exagerada às situações" />
+                    android:text="Tive a tendência de reagir de forma exagerada às situações"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -396,21 +404,23 @@ ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <TextView
                     android:id="@+id/question7"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti tremores (ex. nas mãos) " />
+                    android:text="Senti tremores (ex. nas mãos) "
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -446,21 +456,23 @@ ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <TextView
-                    android:textColor="@color/black"
                     android:id="@+id/question8"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti que estava sempre nervoso" />
+                    android:text="Senti que estava sempre nervoso"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -495,23 +507,24 @@ ofegante, falta de ar, sem ter feito nenhum esforço físico)" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
-
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <TextView
                     android:id="@+id/question9"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Preocupei-me com situações em que eu pudesse entrar em pânico e
-parecesse ridículo (a)" />
+parecesse ridículo (a)"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -547,22 +560,23 @@ parecesse ridículo (a)" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
-
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <TextView
                     android:id="@+id/question10"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti que não tinha nada a desejar" />
+                    android:text="Senti que não tinha nada a desejar"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -598,22 +612,23 @@ parecesse ridículo (a)" />
             </TableRow>
 
 
-
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:id="@+id/question11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti-me agitado" />
+                    android:text="Senti-me agitado"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
 
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -648,20 +663,22 @@ parecesse ridículo (a)" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:id="@+id/question12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Achei difícil relaxar" />
+                    android:text="Achei difícil relaxar"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -696,20 +713,22 @@ parecesse ridículo (a)" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:id="@+id/question13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti-me depressivo (a) e sem ânimo" />
+                    android:text="Senti-me depressivo (a) e sem ânimo"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -744,21 +763,23 @@ parecesse ridículo (a)" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:id="@+id/question14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Fui intolerante com as coisas que me impediam de continuar o que eu
-estava fazendo" />
+estava fazendo"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -793,20 +814,22 @@ estava fazendo" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:id="@+id/question15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti que ia entrar em pânico" />
+                    android:text="Senti que ia entrar em pânico"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -842,20 +865,22 @@ estava fazendo" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
-                    android:textColor="@color/black"
                     android:id="@+id/question16"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Não consegui me entusiasmar com nada" />
+                    android:text="Não consegui me entusiasmar com nada"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -891,20 +916,22 @@ estava fazendo" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question17"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti que não tinha valor como pessoa" />
+                    android:text="Senti que não tinha valor como pessoa"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -939,20 +966,22 @@ estava fazendo" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question18"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti que estava um pouco emotivo/sensível demais" />
+                    android:text="Senti que estava um pouco emotivo/sensível demais"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -987,21 +1016,23 @@ estava fazendo" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question19"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sabia que meu coração estava alterado mesmo não tendo feito nenhum
-esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
+esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -1036,20 +1067,22 @@ esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
                 </RadioGroup>
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question20"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti medo sem motivo" />
+                    android:text="Senti medo sem motivo"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
 
                 <RadioGroup
@@ -1085,21 +1118,22 @@ esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
             </TableRow>
 
 
-            <TableRow android:layout_height="fill_parent"
-                android:layout_width="fill_parent">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
                 <TextView
                     android:id="@+id/question21"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Senti que a vida não tinha sentido " />
+                    android:text="Senti que a vida não tinha sentido "
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
             </TableRow>
 
-            <TableRow android:layout_width="match_parent"
+            <TableRow
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
 
 
                 <RadioGroup
@@ -1137,5 +1171,11 @@ esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)" />
 
         </TableLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar resultado" />
 
 </LinearLayout>
