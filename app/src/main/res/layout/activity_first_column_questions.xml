@@ -25,36 +25,40 @@
  que indique o quanto ela se aplicou a você durante a última semana, conforme a indicação a seguir:" />
 
     <TextView
-        android:gravity="center"
+        android:gravity="left"
         android:textSize="15dp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0 - Não se aplicou de maneira alguma" />
+        android:textStyle="bold"
+        android:text="\n0 - Não se aplicou de maneira alguma" />
 
     <TextView
-        android:gravity="center"
+        android:gravity="left"
         android:textSize="15dp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="1 - Aplicou-se em algum grau, ou por pouco de tempo" />
 
     <TextView
-        android:gravity="center"
+        android:gravity="left"
         android:textSize="15dp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="2 - Aplicou-se em um grau considerável, ou por uma boaa parte do tempo" />
 
     <TextView
-        android:gravity="center"
+        android:gravity="left"
         android:textSize="15dp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="3 - Aplicou-se muito, ou na maioria do tempo" />
 
     <ScrollView
@@ -1176,6 +1180,7 @@ esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)"
         android:id="@+id/calculateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Verificar resultado" />
+        android:text="Verificar resultado"
+        />
 
 </LinearLayout>
