@@ -54,8 +54,8 @@
 
         <TextView
             android:id="@+id/textointroducao"
-            android:layout_width="287dp"
-            android:layout_height="448dp"
+            android:layout_width="336dp"
+            android:layout_height="337dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
@@ -67,9 +67,10 @@ de 14 itens, se referindo a sintomas vivenciados pelo sujeito na semana anterior
             android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@+id/center_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.602"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.769" />
+            app:layout_constraintVertical_bias="0.518" />
 
         <Button
             android:id="@+id/center_button"
@@ -86,6 +87,26 @@ de 14 itens, se referindo a sintomas vivenciados pelo sujeito na semana anterior
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:rippleColor="#979797" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="269dp"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/center_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textointroducao" />
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insira seu email abaixo para receber os resultados"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textointroducao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
