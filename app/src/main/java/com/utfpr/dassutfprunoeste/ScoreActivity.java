@@ -76,15 +76,28 @@ public class ScoreActivity extends AppCompatActivity {
         calcDepressao();
         calcAnsiedade();
         calcEstresse();
-
     }
 
-    public void sendEmail(String email){
+    public void sendEmail(String cpf){
+        String genero = sh.getString("genero", null);
+        String raca = sh.getString("raca", null);
+        String grau = sh.getString("educacao", null);
+        String renda = sh.getString("familiar", null);
+
+        if(renda == null || renda == "") {
+            renda = "Não informada";
+        }
+
+        String data = sh.getString("datanasc", null);
+
+        if(data == null) {
+            data = "Não informada";
+        }
 
         try {
-            String stringSenderEmail = "oficinautfpr@gmail.com";
-            String stringReceiverEmail = email;
-            String stringPasswordSenderEmail = "jqmfprvfiojrsuox";
+            String stringSenderEmail = "***";
+            String stringReceiverEmail = "***";
+            String stringPasswordSenderEmail = "***";
 
             String stringHost = "smtp.gmail.com";
 
@@ -106,7 +119,13 @@ public class ScoreActivity extends AppCompatActivity {
             mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(stringReceiverEmail));
 
             mimeMessage.setSubject("Pesquisa DASS UTFPR x UNOESTE.");
-            mimeMessage.setText("Olá, \n\nVocê utilizou o sistema de pesquisa DASS, desenvolvido pela UTFPR x UNOESTE.. \n\nO resultado para o seu teste é: \nDepressao: "  + resultDepression + "\nAnsiedade: " +  resultAnxiety + "\nEstresse: "  +resultStress);
+            mimeMessage.setText("Olá, segue o resultado do exame de " + cpf + "\n\nFoi utilizado o sistema de pesquisa DASS, desenvolvido pela UTFPR x UNOESTE.. " +
+                    "\n Genero: " + genero +
+                    "\n Raça/Cor: " + raca +
+                    "\n Graude Instrução: " + grau +
+                    "\n Renda Familiar: " + renda +
+                    "\n Data de Nascimento: " + data +
+                    "\n\nO resultado para o teste é: \nDepressao: "  + resultDepression + "\nAnsiedade: " +  resultAnxiety + "\nEstresse: "  +resultStress);
 
             Thread thread = new Thread(new Runnable() {
                 @Override
@@ -235,13 +254,16 @@ public class ScoreActivity extends AppCompatActivity {
             resultStress = SeveridadeEnum.MUITOGRAVE.getContent();
         }
 
-        String storedEmail = sh.getString("email", null);
-        if (storedEmail != null && storedEmail != "") {
-            sendEmail(storedEmail);
+        String cpf = sh.getString("cpf", null);
+        if (cpf != null && cpf.length() > 10) {
+            sendEmail(cpf);
+            sh.edit().clear().commit();
+        } else {
+            sh.edit().clear().commit();
         }
     }
 
     private void handleToast(String message) {
-        Toast.makeText(this,message, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_LONG).show();
     }
 }

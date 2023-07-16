@@ -1,11 +1,34 @@
 <resources>
-    <string name="app_name">DASS_UTFPRxUNOESTE</string>
+    <string name="app_name">psy</string>
 
     <string-array name="section_answers">
         <item>Não se aplicou de maneira alguma</item>
         <item>Aplicou-se em algum grau, ou por pouco de tempo</item>
         <item>Aplicou-se em um grau considerável</item>
         <item>Aplicou-se muito, ou na maioria do tempo</item>
+    </string-array>
+    <string name="title_activity_verify">VerifyActivity</string>
+
+    <string-array name="gender_options">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Não binário</item>
+        <item>Outro</item>
+    </string-array>
+
+        <string-array name="race_options">
+            <item>Negro</item>
+            <item>Branco</item>
+            <item>Outro</item>
+        </string-array>
+
+    <string-array name="education_levels">
+        <item>Nenhum</item>
+        <item>Fundamental</item>
+        <item>Médio</item>
+        <item>Técnico</item>
+        <item>Graduação</item>
+        <item>Pós-graduação</item>
     </string-array>
 </resources>
 

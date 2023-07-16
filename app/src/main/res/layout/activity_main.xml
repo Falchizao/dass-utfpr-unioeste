@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:background="@color/yellow_standard"
+        android:background="#E4DFDF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -49,16 +49,17 @@
 
         <ImageView
             android:id="@+id/imageViewUnoeste"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="282dp"
+            android:layout_height="258dp"
             android:layout_above="@id/imageViewUtfpr"
             android:contentDescription="Logo"
-            android:src="@drawable/unoeste_logo"
+            android:src="@drawable/unioestelogo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.638">
+            app:layout_constraintVertical_bias="0.677">
 
         </ImageView>
 
